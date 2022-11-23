@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Real Estate Agency" />
+    <meta
+      name="keywords"
+      content="property, properties, home, realtor, estate agents, for sale"
+    />
+    <meta name="author" content="Stanislava Pavlova" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/95dc93da07.js"></script>  -->
+
+    <link
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+      href="images/logo-tab.png"
+    />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Playfair+Display:ital,wght@0,400;0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Hoomie</title>
+  </head>
+  <body>
+    <div class="header-container">
+      <header class="header-menu">
+        <div class="flex container">
+          <img src="images/logo.png" alt="Hoomie logo" />
+          <nav>
+            <button id="nav-toggle" class="hamburger-menu">
+              <span class="strip"></span>
+              <span class="strip"></span>
+              <span class="strip"></span>
+            </button>
+
+            <ul id="nav-menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#why-us">Why us</a></li>
+              <li><a href="#properties">Properties</a></li>
+              <li><a href="#agents">Agents</a></li>
+              <li><a href="#contacts">Contact us</a></li>
+              <li id="close-flyout"><span class="fas fa-times"></span></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section class="home">
+        <div class="home-text">
+          <h1>
+            Find Your Perfect Place With <span class="accent">Hoomie</span>
+          </h1>
+          <p>
+            Adapt your home to your needs and make it a heaven on earth. We
+            provide a complete service for the sale purchase of real estate.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <section id="why-us" class="why-us">
+      <div class="container">
+        <h2>Why us</h2>
+        <div class="flex">
+          <div>
+            <i class="fa-solid fa-house-lock accent"></i>
+            <h4>Property Insurance</h4>
+            <p>
+              Your home is often one of your largest investments. Make sure you
+              are covered for the unexpected.
+            </p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-hand-holding-dollar accent"></i>
+            <h4>Lowest Commission</h4>
+            <p>
+              We are proud to offer our low commission rate &amp; still provide
+              our clients with a premium selling experience.
+            </p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-sack-dollar accent"></i>
+            <h4>Tax Advantage</h4>
+            <p>
+              We start by finding out a little about you and your home buying
+              goals so we can give you the solution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="properties" class="properties">
+      <div class="container">
+        <h2>Properties</h2>
+
+        <div class="flex">
+          <div class="property-card">
+            <a href="#">
+              <img src="images/firstHouse/1.jpg" alt="first house image" />
+            </a>
+            <div class="prop-info">
+              <div class="first-line">
+                <h4 class="price">&euro;118 485</h4>
+                <h4 class="location">Plovdiv</h4>
+                <div class="clear-fix"></div>
+              </div>
+              <h5 class="description">
+                <a href="#">2-bed apartment</a>
+              </h5>
+              <div class="prop-icons flex">
+                <span><i class="fa-solid fa-bed"></i>2 Beds </span>
+                <span><i class="fa-solid fa-bath"></i>2 Baths </span>
+                <span
+                  ><i class="fa-solid fa-ruler-combined"></i>116 m<sup>2</sup>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="property-card">
+            <a href="#">
+              <img src="images/secondHouse/1.jpg" alt="second house image" />
+            </a>
+            <div class="prop-info">
+              <div class="first-line">
+                <h4 class="price accent">&euro;155 000</h4>
+                <h4 class="location">Plovdiv</h4>
+                <div class="clear-fix"></div>
+              </div>
+              <h5 class="description">
+                <a href="#">Cottage</a>
+              </h5>
+              <div class="prop-icons flex">
+                <span><i class="fa-solid fa-bed"></i>3 Beds </span>
+                <span><i class="fa-solid fa-bath"></i>2 Baths </span>
+                <span
+                  ><i class="fa-solid fa-ruler-combined"></i>143 m<sup>2</sup>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="property-card">
+            <a href="#">
+              <img src="images/thirdHouse/1.jpg" alt="third house image" />
+            </a>
+            <div class="prop-info">
+              <div class="first-line">
+                <h4 class="price accent">&euro;83 500</h4>
+                <h4 class="location">Varna</h4>
+                <div class="clear-fix"></div>
+              </div>
+              <h5 class="description">
+                <a href="#">1-bed apartment</a>
+              </h5>
+              <div class="prop-icons flex">
+                <span><i class="fa-solid fa-bed"></i>1 Bed </span>
+                <span><i class="fa-solid fa-bath"></i>1 Bath </span>
+                <span
+                  ><i class="fa-solid fa-ruler-combined"></i>67 m<sup>2</sup>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="property-card">
+            <a href="#">
+              <img src="images/fourthHouse/1.jpg" alt="fourth house image" />
+            </a>
+            <div class="prop-info">
+              <div class="first-line">
+                <h4 class="price accent">&euro;138 053</h4>
+                <h4 class="location">Kazanlak</h4>
+                <div class="clear-fix"></div>
+              </div>
+              <h5 class="description">
+                <a href="#">House in closed complex</a>
+              </h5>
+              <div class="prop-icons flex">
+                <span><i class="fa-solid fa-bed"></i>2 Beds </span>
+                <span><i class="fa-solid fa-bath"></i>3 Baths </span>
+                <span
+                  ><i class="fa-solid fa-ruler-combined"></i>153 m<sup>2</sup>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="property-card">
+            <a href="#">
+              <img src="images/fifthHouse/1.jpg" alt="fifth house image" />
+            </a>
+            <div class="prop-info">
+              <div class="first-line">
+                <h4 class="price accent">&euro;55 000</h4>
+                <h4 class="location">Kazanlak</h4>
+                <div class="clear-fix"></div>
+              </div>
+              <h5 class="description">
+                <a href="#">1-bed apartment</a>
+              </h5>
+              <div class="prop-icons flex">
+                <span><i class="fa-solid fa-bed"></i>1 Beds </span>
+                <span><i class="fa-solid fa-bath"></i>1 Baths </span>
+                <span
+                  ><i class="fa-solid fa-ruler-combined"></i>67 m<sup>2</sup>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="property-card">
+            <a href="#">
+              <img src="images/sixthHouse/1.jpg" alt="sixth house image" />
+            </a>
+            <div class="prop-info">
+              <div class="first-line">
+                <h4 class="price accent">&euro;197 000</h4>
+                <h4 class="location">Plovdiv</h4>
+                <div class="clear-fix"></div>
+              </div>
+              <h5 class="description">
+                <a href="#">3-bed apartment</a>
+              </h5>
+              <div class="prop-icons flex">
+                <span><i class="fa-solid fa-bed"></i>3 Beds </span>
+                <span><i class="fa-solid fa-bath"></i>3 Baths </span>
+                <span
+                  ><i class="fa-solid fa-ruler-combined"></i>229 m<sup>2</sup>
+                </span>
+              </div>
+            </div>
+          </div>
+          <button class="rounded">View All Properties</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="agents" class="agents">
+      <div class="container">
+        <h2>Agents</h2>
+        <p class="large-paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima
+          neque tempora reiciendis.
+        </p>
+
+        <div class="flex">
+          <div class="card">
+            <img src="images/employees/employee-1.jpg" alt="Employee 1" />
+            <h3>Victoria Ivanova</h3>
+            <p>Real Estate Agent</p>
+          </div>
+
+          <div class="card">
+            <img src="images/employees/employee-2.jpg" alt="Employee 2" />
+            <h3>Simeon Dobrev</h3>
+            <p>Real Estate Agent</p>
+          </div>
+
+          <div class="card">
+            <img src="images/employees/employee-3.jpg" alt="Employee 3" />
+            <h3>Maria Georgieva</h3>
+            <p>Real Estate Agent</p>
+          </div>
+
+          <div class="card">
+            <img src="images/employees/employee-4.jpg" alt="Employee 4" />
+            <h3>Vladislav Ivanov</h3>
+            <p>Real Estate Agent</p>
+          </div>
+
+          <div class="card">
+            <img src="images/employees/employee-5.jpg" alt="Employee 5" />
+            <h3>Astrid Howard</h3>
+            <p>Real Estate Agent</p>
+          </div>
+
+          <div class="card">
+            <img src="images/employees/employee-6.jpg" alt="Employee 6" />
+            <h3>Andy Hampton</h3>
+            <p>Real Estate Agent</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+      <div class="container">
+        <h2>Contact Us</h2>
+
+        <div class="flex">
+          <div class="form-container">
+            <h3>Contact Form</h3>
+            <form
+              action="mailto:hoomie@gmail.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" />
+
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                placeholder="Write your message here.."
+              ></textarea>
+
+              <input type="submit" value="Submit" class="rounded" />
+            </form>
+          </div>
+
+          <div class="address-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2958.418869789634!2d24.735662615449325!3d42.14132257920216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14acd1c9ded57be5%3A0x1a026bc27887ad71!2z0YPQuy4g4oCe0JPQu9Cw0LTRgdGC0L7QveKAnCA5MCwgNDAwMiDQptC10L3RgtGK0YAsINCf0LvQvtCy0LTQuNCy!5e0!3m2!1sbg!2sbg!4v1653231981034!5m2!1sbg!2sbg"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="address">
+              <label>Address:</label>
+              <address class="accent">90 Gladstone Street, Plovdiv</address>
+            </div>
+
+            <div class="phone">
+              <label>Phone:</label>
+              <a href="#" class="accent">123-456-7890</a>
+            </div>
+
+            <div class="email">
+              <label>Email Address:</label>
+              <a href="#" class="accent">hoomie@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="flex container">
+        <div class="subscribe-container">
+          <div id="addFlex">
+            <h3 class="subscribe-h">
+              Subscribe To Our <br />
+              Newsletter
+            </h3>
+            <div class="email-container">
+              <input type="email" placeholder="Enter Email" />
+              <button class="sub-btn">></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="company-container">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#why-us">Why us</a></li>
+            <li><a href="#properties">Properties</a></li>
+            <li><a href="#agents">Agents</a></li>
+          </ul>
+        </div>
+
+        <div class="about-container">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Board of Directors</a></li>
+            <li><a href="#">Team Members</a></li>
+            <li><a href="#">Our Foundation</a></li>
+          </ul>
+        </div>
+
+        <div class="accounts-container">
+          <h4>Follow us</h4>
+          <ul>
+            <li>
+              <a href="#"><span class="fab fa-facebook-f"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fab fa-instagram"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fab fa-linkedin-in"></span></a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer-copyright">
+          Copyright &copy; 2022 All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
